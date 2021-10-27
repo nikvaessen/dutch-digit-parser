@@ -94,7 +94,7 @@ class DigitTransformer(Transformer):
         return sum(value)
 
     def getal(self, digit):
-        return str(digit)
+        return str(digit[0])
 
 
 ################################################################################
@@ -112,5 +112,5 @@ def parse_digit_text(digit: str) -> Tuple[str, Tree]:
     tree = parser.parse(digit)
     print(tree.pretty())
     output = transformer.transform(tree)
-
+    print(output)
     return output, tree
