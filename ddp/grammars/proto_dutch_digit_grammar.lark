@@ -1,0 +1,52 @@
+getal: eental
+        | tiental
+        | samenvoeging 
+        | meertal
+
+eental: eenheid | tweeheid
+tiental: tienheid
+meertal: vuldeging 
+        | vuldeging [" " meertal]+ " " eental
+        | vuldeging [" " meertal]+ " en " tiental 
+        | vuldeging [" " meertal]+ " " samenvoeging
+
+samenvoeging: eenheid " en " tienheid
+
+vuldeging: samenvoeging " " meerheid 
+        | tiental " " meerheid
+        | eenheid " " meerheid
+
+eenheid: "een" -> een 
+        | "twee" -> twee
+        | "drie" -> drie
+        | "vier" -> vier
+        | "vijf" -> vijf
+        | "zes" -> zes
+        | "zeven" -> zeven
+        | "acht" -> acht
+        | "negen" -> negen
+
+tweeheid: "elf" -> elf
+        | "twaalf" -> twaalf
+        | "dertien" -> dertien
+        | "veertien" -> veertien
+        | "vijftien" -> vijftien
+        | "zestien" -> zestien
+        | "zeventien" -> zeventien
+        | "achttien" -> achttien
+        | "negentien" -> negentien
+
+tienheid: "tien" -> tien 
+        |"twintig" -> twintig
+        | "dertig"  -> dertig
+        | "veertig" -> veertig
+        | "vijftig" -> vijftig
+        | "zestig" -> zestig
+        | "zeventig" -> zeventig
+        | "tachtig" -> tachtig
+        | "negentig" -> negentig
+
+meerheid: "honderd" -> honderd
+        | "duizend" -> duizend
+        | "miljoen" -> miljoen
+        | "miljard" -> miljard
