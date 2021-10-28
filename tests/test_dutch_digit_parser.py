@@ -9,9 +9,9 @@ def test_some_numbers():
     _555 = "vijf honderd vijf en vijftig"
     _5555 = "vijf duizend vijf en vijftig"
     _55_555 = "vijf en vijftig duizend vijf hondend vijf en vijftig"
-    _555_555 = "vijf honderd vijf en vijfig duizend vijf honderd vijf en vijftig"
+    _555_555 = "vijf honderd vijf en vijftig duizend vijf honderd vijf en vijftig"
     _5_555_555 = (
-        "vijf miljoen vijf honderd vijf en vijfig duizend vijf honderd vijf en vijftig"
+        "vijf miljoen vijf honderd vijf en vijftig duizend vijf honderd vijf en vijftig"
     )
 
     _1300 = "dertien honderd"
